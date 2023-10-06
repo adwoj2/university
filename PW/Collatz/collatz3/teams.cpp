@@ -262,7 +262,6 @@ ContestResult TeamNewProcesses::runContest(ContestInput const & contestInput)
 
             switch (fork()) {                     
                 case -1: 
-                    std::cout <<"XD";
                     break;
                 case 0:    
                 {
@@ -284,7 +283,6 @@ ContestResult TeamNewProcesses::runContest(ContestInput const & contestInput)
 
             switch (fork()) {                     
                 case -1: 
-                    std::cout <<"XD";
                     break;
                 case 0:                 
                     mapped_mem[idx] = calcCollatz(singleInput);
@@ -329,7 +327,6 @@ ContestResult TeamConstProcesses::runContest(ContestInput const & contestInput)
 
         switch (fork()) {                     
             case -1: 
-                std::cout <<"XD";
                 break;
             case 0:  
                 uint64_t singleResult; 
